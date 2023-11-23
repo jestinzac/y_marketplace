@@ -25,4 +25,6 @@ Here in the root folder, run the below code which will install all the dependenc
 ## Testing:
 * Run `npm test` from root folder or inside 'Client' folder
 
+## Working Page:
 
+![Screenshot 2023-11-23 at 00 09 46](https://github.com/jestinzac/y_marketplace/assets/4215450/745bce6c-3d93-4b6f-b34a-416a7c4f74a3)
