@@ -1,0 +1,12 @@
+{
+  "name": "marketplace-server",
+  "version": "1.0.0",
+  "description": "Essential API's required for the application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": ["marketplace", "service"],
+  "author": "",
+  "license": "ISC"
+}

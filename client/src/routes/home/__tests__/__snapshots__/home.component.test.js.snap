@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders error when API call fails 1`] = `
+<DocumentFragment>
+  <section
+    class="container mx-auto box-content h-screen w-100 p-4 border border-gray-500 bg-white"
+  >
+    <div
+      class="grid grid-cols-5 gap-3"
+      data-testid="directory"
+    >
+      <div
+        class="bg-blue-100 grid content-start"
+        data-testid="column-1-search"
+      >
+        <label
+          class="pt-10 m-5 cursor-pointer"
+          for="username"
+        >
+          Available Jobs for: 
+        </label>
+        <select
+          class="shadow-inner mx-4 h-11"
+          data-testid="username"
+          disabled=""
+          id="username"
+          name="username"
+        />
+        <div
+          class="flex pt-2 m-5 text-sm"
+        >
+          <h4>
+            Display Name:
+          </h4>
+           
+          <span
+            class="font-bold"
+          >
+            -
+          </span>
+        </div>
+      </div>
+      <div
+        class="bg-orange-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth"
+        data-testid="column-2-jobs"
+      >
+        <div
+          class="block text-sm text-left h-12 flex items-center p-4 rounded-sm border text-red-600 bg-red-200 border-red-400"
+          data-testid="info-box"
+          data-type="error"
+          role="alert"
+        >
+          Something went wrong, please check again later.
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Home renders users when API call succeeds 1`] = `
+<DocumentFragment>
+  <section
+    class="container mx-auto box-content h-screen w-100 p-4 border border-gray-500 bg-white"
+  >
+    <div
+      class="grid grid-cols-5 gap-3"
+      data-testid="directory"
+    >
+      <div
+        class="bg-blue-100 grid content-start"
+        data-testid="column-1-search"
+      >
+        <label
+          class="pt-10 m-5 cursor-pointer"
+          for="username"
+        >
+          Available Jobs for: 
+        </label>
+        <select
+          class="shadow-inner mx-4 h-11"
+          data-testid="username"
+          id="username"
+          name="username"
+        >
+          <option
+            data-testid="option-value"
+            value="5"
+          >
+            mario.bros
+          </option>
+        </select>
+        <div
+          class="flex pt-2 m-5 text-sm"
+        >
+          <h4>
+            Display Name:
+          </h4>
+           
+          <span
+            class="font-bold"
+          >
+            -
+          </span>
+        </div>
+      </div>
+      <div
+        class="bg-orange-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth"
+        data-testid="column-2-jobs"
+      >
+        <div
+          class="block text-sm text-left h-12 flex items-center p-4 rounded-sm border text-indigo-600 bg-indigo-200 border-indigo-400"
+          data-testid="info-box"
+          data-type="info"
+          role="alert"
+        >
+          No jobs available at the moment.
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Home should render the component with loader 1`] = `
+<DocumentFragment>
+  <section
+    class="container mx-auto box-content h-screen w-100 p-4 border border-gray-500 bg-white"
+  >
+    <div
+      class="grid grid-cols-5 gap-3 animate-pulse"
+      data-testid="loader"
+    >
+      <div
+        class="bg-gray-200 grid content-start"
+      />
+      <div
+        class="bg-gray-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;

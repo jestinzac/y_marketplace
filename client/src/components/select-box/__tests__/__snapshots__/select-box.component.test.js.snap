@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectBox should render the element with values and trigger event on change 1`] = `
+<DocumentFragment>
+  <label
+    class="pt-10 m-5 cursor-pointer"
+    for="username"
+  >
+    Available Jobs for: 
+  </label>
+  <select
+    class="shadow-inner mx-4 h-11"
+    data-testid="username"
+    id="username"
+    name="username"
+  >
+    <option
+      data-testid="option-value"
+      value="1"
+    >
+      John
+    </option>
+    <option
+      data-testid="option-value"
+      value="2"
+    >
+      Smith
+    </option>
+  </select>
+</DocumentFragment>
+`;
+
+exports[`SelectBox should render the element with values if passed 1`] = `
+<DocumentFragment>
+  <label
+    class="pt-10 m-5 cursor-pointer"
+    for="username"
+  >
+    Available Jobs for: 
+  </label>
+  <select
+    class="shadow-inner mx-4 h-11"
+    data-testid="username"
+    id="username"
+    name="username"
+  >
+    <option
+      data-testid="option-value"
+      value="1"
+    >
+      John
+    </option>
+    <option
+      data-testid="option-value"
+      value="2"
+    >
+      Smith
+    </option>
+  </select>
+</DocumentFragment>
+`;
+
+exports[`SelectBox should render the element without any values 1`] = `
+<DocumentFragment>
+  <label
+    class="pt-10 m-5 cursor-pointer"
+    for="username"
+  >
+    Available Jobs for: 
+  </label>
+  <select
+    class="shadow-inner mx-4 h-11"
+    data-testid="username"
+    id="username"
+    name="username"
+  />
+</DocumentFragment>
+`;

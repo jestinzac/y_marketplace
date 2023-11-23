@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should render the respective list item 1`] = `
+<DocumentFragment>
+  <article
+    class="w-auto p-6 m-5 bg-white rounded-md overflow-hidden shadow-lg hover:shadow-xl list-item"
+    data-testid="list-item"
+    id="1"
+  >
+    <span
+      class="rounded-full bg-purple-200 py-1 px-4 text-xs font-bold text-purple-600 tag"
+    >
+      plumber
+    </span>
+    <h2
+      class="text-3xl py-4 font-bold text-blue-800 description headline"
+    >
+      My toilet won't flush
+    </h2>
+    <p
+      class="text-xl py-3 pb-20 font-medium text-gray-900"
+    >
+      There is a problem with my toilet and I need someone to fix it.
+    </p>
+    <div
+      class="py-4 flex justify-between items-center bottom-info"
+    >
+      <div
+        class="flex gap-2"
+      >
+        <svg
+          class="w-6 h-6"
+          data-testid="calender-svg-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span
+          class="date content-end"
+          data-testid="formatted-date"
+        >
+          15/01/2020, 10:47
+        </span>
+      </div>
+      <div
+        class="flex gap-2"
+      >
+        <svg
+          class="w-6 h-6"
+          data-testid="map-pin-svg-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span
+          class="location"
+        >
+          Brooklyn, NYC
+        </span>
+      </div>
+    </div>
+  </article>
+</DocumentFragment>
+`;

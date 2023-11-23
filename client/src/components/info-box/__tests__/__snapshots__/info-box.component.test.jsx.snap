@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoBox should render of type error 1`] = `
+<DocumentFragment>
+  <div
+    class="block text-sm text-left h-12 flex items-center p-4 rounded-sm border bg-red-100"
+    data-testid="info-box"
+    data-type="error"
+    role="alert"
+  >
+    Error Text
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InfoBox should render of type info 1`] = `
+<DocumentFragment>
+  <div
+    class="block text-sm text-left h-12 flex items-center p-4 rounded-sm border bg-blue-100"
+    data-testid="info-box"
+    data-type="info"
+    role="alert"
+  >
+    Test 1
+  </div>
+</DocumentFragment>
+`;

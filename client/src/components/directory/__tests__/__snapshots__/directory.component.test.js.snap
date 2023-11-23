@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should render error info box if there is failure in service or any other errors 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-5 gap-3"
+    data-testid="directory"
+  >
+    <div
+      class="bg-blue-100 grid content-start"
+      data-testid="column-1-search"
+    >
+      <label
+        class="pt-10 m-5 cursor-pointer"
+        for="username"
+      >
+        Available Jobs for: 
+      </label>
+      <select
+        class="shadow-inner mx-4 h-11"
+        data-testid="username"
+        disabled=""
+        id="username"
+        name="username"
+      />
+      <div
+        class="flex pt-2 m-5 text-sm"
+      >
+        <h4>
+          Display Name:
+        </h4>
+         
+        <span
+          class="font-bold"
+        >
+          -
+        </span>
+      </div>
+    </div>
+    <div
+      class="bg-orange-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth"
+      data-testid="column-2-jobs"
+    >
+      <div
+        class="block text-sm text-left h-12 flex items-center p-4 rounded-sm border text-red-600 bg-red-200 border-red-400"
+        data-testid="info-box"
+        data-type="error"
+        role="alert"
+      >
+        Something went wrong, please check again later.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ListItem should render info box if there is no data available 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-5 gap-3"
+    data-testid="directory"
+  >
+    <div
+      class="bg-blue-100 grid content-start"
+      data-testid="column-1-search"
+    >
+      <label
+        class="pt-10 m-5 cursor-pointer"
+        for="username"
+      >
+        Available Jobs for: 
+      </label>
+      <select
+        class="shadow-inner mx-4 h-11"
+        data-testid="username"
+        id="username"
+        name="username"
+      />
+      <div
+        class="flex pt-2 m-5 text-sm"
+      >
+        <h4>
+          Display Name:
+        </h4>
+         
+        <span
+          class="font-bold"
+        >
+          -
+        </span>
+      </div>
+    </div>
+    <div
+      class="bg-orange-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth"
+      data-testid="column-2-jobs"
+    >
+      <div
+        class="block text-sm text-left h-12 flex items-center p-4 rounded-sm border text-indigo-600 bg-indigo-200 border-indigo-400"
+        data-testid="info-box"
+        data-type="info"
+        role="alert"
+      >
+        No jobs available at the moment.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ListItem should render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-5 gap-3"
+    data-testid="directory"
+  >
+    <div
+      class="bg-blue-100 grid content-start"
+      data-testid="column-1-search"
+    >
+      <label
+        class="pt-10 m-5 cursor-pointer"
+        for="username"
+      >
+        Available Jobs for: 
+      </label>
+      <select
+        class="shadow-inner mx-4 h-11"
+        data-testid="username"
+        id="username"
+        name="username"
+      >
+        <option
+          data-testid="option-value"
+          value="1"
+        >
+          mario.bros
+        </option>
+      </select>
+      <div
+        class="flex pt-2 m-5 text-sm"
+      >
+        <h4>
+          Display Name:
+        </h4>
+         
+        <span
+          class="font-bold"
+        >
+          Mario Bros.
+        </span>
+      </div>
+    </div>
+    <div
+      class="bg-orange-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth"
+      data-testid="column-2-jobs"
+    >
+      <div
+        class="min-h-screen flex flex-col list-items"
+        data-testid="list-container"
+        data-username="mario.bros"
+      >
+        <article
+          class="w-auto p-6 m-5 bg-white rounded-md overflow-hidden shadow-lg hover:shadow-xl list-item"
+          data-testid="list-item"
+          id="2"
+        >
+          <span
+            class="rounded-full bg-purple-200 py-1 px-4 text-xs font-bold text-purple-600 tag"
+          >
+            Plumbers
+          </span>
+          <h2
+            class="text-3xl py-4 font-bold text-blue-800 description headline"
+          >
+            Leaky tap needs fixing
+          </h2>
+          <p
+            class="text-xl py-3 pb-20 font-medium text-gray-900"
+          >
+            The tap in my kitchen is dripping all of the time, please fix it.
+          </p>
+          <div
+            class="py-4 flex justify-between items-center bottom-info"
+          >
+            <div
+              class="flex gap-2"
+            >
+              <svg
+                class="w-6 h-6"
+                data-testid="calender-svg-icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span
+                class="date content-end"
+                data-testid="formatted-date"
+              >
+                11/5/2020, 15:47
+              </span>
+            </div>
+            <div
+              class="flex gap-2"
+            >
+              <svg
+                class="w-6 h-6"
+                data-testid="map-pin-svg-icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span
+                class="location"
+              >
+                Brooklyn, NYC
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
