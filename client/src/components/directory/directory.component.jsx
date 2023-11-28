@@ -7,22 +7,30 @@ import InfoBox from "../info-box/info-box.component";
 const Directory = ({ data, hasError }) => {
   const [selectOption, setSelectOption] = useState(1);
   const [filteredData, setFilterData] = useState(null);
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
-    const newFilteredData = data.find((ddd) => +ddd.id === +selectOption);
+    let getFilteredData = data.find((ddd) => +ddd.id === +selectOption);
+    if (searchText.length >= 2) {
+      const getDataFilteredWithText = getFilteredData?.jobs.filter((item) => item?.headline.toLowerCase().includes(searchText.toLowerCase()));
+      setFilterData({...getFilteredData, jobs: getDataFilteredWithText});
+      return;
+    } 
+    
+    setFilterData(getFilteredData);
+  }, [selectOption, data, searchText]);
 
-    setFilterData(newFilteredData);
-  }, [selectOption, data]);
 
-  const onSelectChange = (event) => {
-    const selectOptionValue = event.target.value;
+  const onSelectChange = (event) => setSelectOption( event.target.value);
 
-    setSelectOption(selectOptionValue);
-  };
+  const onTitleSearch = (event) => setSearchText(event.target.value);
 
   return (
     <div className="grid grid-cols-5 gap-3" data-testid="directory">
-      <div className="bg-blue-100 grid content-start" data-testid="column-1-search">
+      <div
+        className="bg-blue-100 grid content-start"
+        data-testid="column-1-search"
+      >
         <SelectBox
           type="username"
           onChangeHandler={onSelectChange}
@@ -33,8 +41,21 @@ const Directory = ({ data, hasError }) => {
           <h4>Display Name:</h4>&nbsp;
           <span className="font-bold">{filteredData?.display_name || "-"}</span>
         </div>
+
+        <div className="flex pt-2 m-5 text-sm">
+          <input
+            type="search"
+            className="w-full pl-3 pr-3 py-2 border-2 border-gray-200 hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors"
+            placeholder="Search my heading..."
+            onChange={onTitleSearch}
+          />
+        </div>
+
       </div>
-      <div className="bg-orange-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth" data-testid="column-2-jobs">
+      <div
+        className="bg-orange-200 col-span-4 jobs-info-container h-screen overflow-scroll scroll-smooth"
+        data-testid="column-2-jobs"
+      >
         {filteredData && <Lists {...filteredData} hasError={hasError} />}
         {!filteredData && !hasError && (
           <InfoBox
